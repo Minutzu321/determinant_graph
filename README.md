@@ -66,5 +66,7 @@ def det_gauss_jordan_c(m: list[list]):
                 m[j][k] -= c * m[i][k]
     return det
 ```
+### :ok_hand: Rezultat:
+![rezultat](https://raw.githubusercontent.com/Minutzu321/determinant_graph/main/grafic.png)
 ### :busts_in_silhouette: Realizator
 - Chiruș Mina-Sebastian - Grupa 142
