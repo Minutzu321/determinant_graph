@@ -13,7 +13,7 @@ pip install matplotlib
 ```
 
 ### :hammer_and_wrench: Alcătuirea proiectului
-
+#### Metoda simpla
 Funcția calculează mai întâi dimensiunea matricei de intrare luând lungimea matricei m. Apoi verifică dacă matricea este pătratică, afirmând că dimensiunea matricei este egală cu lungimea primului rând al matricei.
 În cazul în care dimensiunea matricei este 1 sau 2, funcția returnează determinantul matricei folosind formula corespunzătoare.
 În cazul în care dimensiunea matricei este mai mare de 2, funcția utilizează o abordare recursivă pentru a calcula determinantul. Aceasta inițializează o variabilă "det" la 0, apoi trece prin fiecare coloană a primului rând al matricei. Pentru fiecare coloană, se creează o submatrice prin eliminarea primului rând și a coloanei în cauză. Apoi calculează determinantul submatricei în mod recursiv, și îl înmulțește cu un cofactor care depinde de poziția coloanei. În cele din urmă, se adaugă produsul la variabila "det".
@@ -34,7 +34,7 @@ def det_simplu_c(m: list[list]):
             det += m[0][j] * cofactor
         return det
 ```
-
+#### Metoda Gauss-Jordan
 Funcția calculează mai întâi dimensiunea matricei de intrare prin luarea lungimii matricei m și a lungimii primului rând al matricei m[0]. Apoi verifică dacă matricea este pătratică, afirmând că dimensiunea matricei este egală pentru rânduri și coloane.
 Funcția inițializează o variabilă det la 1, care va stoca determinantul matricei.
 Funcția trece prin fiecare rând al matricei. Pentru fiecare rând, aceasta găsește elementul cu cea mai mare valoare absolută din coloana corespunzătoare și înlocuiește rândul curent cu rândul care conține elementul respectiv.
