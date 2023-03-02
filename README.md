@@ -67,6 +67,7 @@ def det_gauss_jordan_c(m: list[list]):
     return det
 ```
 ### :ok_hand: Rezultat:
+n reprezinta dimensiunea unei coloane si a unei linii, matricea fiind de tipul n*n
 ![rezultat](https://raw.githubusercontent.com/Minutzu321/determinant_graph/main/grafic.png)
 ### :busts_in_silhouette: Realizator
 - Chiruș Mina-Sebastian - Grupa 142
